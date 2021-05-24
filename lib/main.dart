@@ -24,12 +24,22 @@ class MyHomePage extends StatelessWidget {
             title: Text("Expense App"),
           ),
           body: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Card(
-                child: Text("First"),
+                child: Container(
+                  child: Text("first"),
+                  width: double.infinity,
+                  color: Colors.blue,
+                ),
+                elevation: 5,
               ),
               Card(
-                child: Text("Secound"),
+                child: Container(
+                  color: Colors.red,
+                  child: Text("Second"),
+                ),
               )
             ],
           )),
